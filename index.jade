@@ -1,0 +1,152 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='description', content='Описання сайту')
+    meta(name='keywords', content='Ключеві слова')
+    link(rel='shortcut icon', href='img/logo.png', type='img/x-icon')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/media.css')
+    link(rel='stylesheet', href='css/fonts.css')
+    link(rel='stylesheet', href='css/font-awesome.min.css')
+    script(src="libs/jQuery3.min.js")
+    title kubb
+  body
+    -var nav = ['home','about','portfolio','services','journal','contact']
+    -var user = 'Jonathon Kubb'
+    #wrapper
+      header
+        .container
+          .header-top
+            .logo
+              a(href="#"): img(src="./img/logo.png", alt="Logo")
+              span kubb  
+            nav   
+              ul
+                each item in nav
+                 li: a(href="#") #{item} 
+            ul.social
+                  li: a(href="#"): i.fa.fa-facebook
+                  li: a(href="#"): i.fa.fa-twitter
+                  li: a(href="#"): i.fa.fa-dribbble
+                  li: a(href="#"): i.fa.fa-pinterest-p   
+          .header-txt
+            h1 #{user}
+            h2 Photography
+            span Based in New York since 2001     
+       //Portfolio 
+      .portfolio.box 
+        .container
+            h1 Hello! I’m #{user}, a freelance Photographer.
+            p Based in New York, I specialize in landscape, advertorial and conceptual photography. 
+            h2.line What services do I offer  
+            .items
+                .item
+                    img(src="./img/street.jpg", alt="street")
+                    .item-footer
+                        h2 Landscape
+                        p Curabitur blandit tempus porttitor. Duis mollis inceptos mollisest commodo luctus erat.
+                .item
+                    img(src="./img/photo.jpg", alt="photo")
+                    .item-footer
+                        h2 Advertorial 
+                        p Maecenas faucibus mollis interdum. Morbi risus porta ac consectetur, vestibulum at eros.
+                .item
+                    img(src="./img/img-1.jpg", alt="img-1")
+                    .item-footer
+                        h2 Conceptual
+                        p Donec elit non porta gravida eget metus. Etiam porta sem malesuada magna mollis euismod. 
+      //Lastes
+      .lastes.box   
+        .container
+                h2.line Latest ınstagram shots
+         .lastes-itm
+               img(src="./img/bike.jpg", alt="bike")
+               img(src="./img/img-3.jpg", alt="img")
+               img(src="./img/car.jpg", alt="car")
+               img(src="./img/img-2.jpg", alt="img")
+               img(src="./img/door.jpg", alt="door") 
+         button(type="button") Instagram page     
+      //Journal
+      .journal.box
+        .container
+          h1.line From the Journal
+          .journal-itm
+            .j-item
+              h2 Pellentesque  Malesuada Vulputate
+              span.data 21.04.2014  /  Photography, Journal
+              img(src="./img/img-4.jpg", alt="img") 
+              p Curabitur blandit tempus porttitor. Duis at vollisky inceptos 
+                |mollisestor commodo luctus erat. Morbi  risus, porta consectetur vestibulum at eros.
+              a(href="#") Continue Reading  
+              span.like 35
+            .j-item
+              h2 Pellentesque  Malesuada Vulputate
+              span.data 21.04.2014  /  Photography, Journal
+              img(src="./img/img-5.jpg", alt="img") 
+              p Curabitur blandit tempus porttitor. Duis at vollisky inceptos 
+                |mollisestor commodo luctus erat. Morbi  risus, porta consectetur vestibulum at eros.
+              a(href="#") Continue Reading  
+              span.like 35
+            .j-item
+              h2 Pellentesque  Malesuada Vulputate
+              span.data 21.04.2014  /  Photography, Journal
+              img(src="./img/img-6.jpg", alt="img") 
+              p Curabitur blandit tempus porttitor. Duis at vollisky inceptos 
+                |mollisestor commodo luctus erat. Morbi  risus, porta consectetur vestibulum at eros.
+              a(href="#") Continue Reading  
+              span.like 35    
+          //About        
+          .about
+            .about-me
+              h2 A little about me
+              img(src="./img/men.jpg", alt="menu" class="left")
+              p.title-me  Maecenas faucibus molli interdum. Cras mattis consectetur
+                |purus sitor amet sed donec malesuada ullamcorper odio.
+              p Curabitur blandit tempus porttitor. Vollisky inceptos mollisestor commodo luctus. Curabitur 
+                |blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligulas semper. 
+                |Cum sociis natoque penatibus et magnis maecenas. 
+                |Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac egestas eget quam.  
+            .services
+              h2 My Services 
+              .photography
+                h3 Photography
+                p Curabitur blandit tempus porttitor. 
+                  |Duis at vollisky inceptos mollisestor commodo luctus erat. 
+                  |Morbi  risus, porta consectetur vestibulum at eros.
+              .video
+                h3 Motion Video
+                p Curabitur blandit tempus porttitor. 
+                  |Duis at vollisky inceptos mollisestor commodo luctus erat. 
+                  |Morbi  risus, porta consectetur vestibulum at eros.
+              .ret
+                h3 Photo Retouching  
+                p Curabitur blandit tempus porttitor. 
+                  |Duis at vollisky inceptos mollisestor commodo luctus erat. 
+                  |Morbi  risus, porta consectetur vestibulum at eros.  
+      footer.box
+        .container
+          .box1
+            .f-descr
+              h1 Get In Touch
+              p Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.
+            .f-descr
+              h1 Twitter
+              p Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.
+
+              p Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.
+
+              p Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.  
+            .f-descr
+              h1 Popular Posts
+              p Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor. <br/><span class="data-f">14 Nov, 2012 </span>
+              
+              p Scelerisque nisl consectetur et. <br/><span class="data-f">22 May, 2012 </span>
+              p Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce <br/><span class="data-f">15 July, 2012 </span>
+            .f-descr
+              h1 About Us    
+              p Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+              p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus curabitur blandit tempus.
+
+    script(type='text/javascript', src='js/scripts.js')
